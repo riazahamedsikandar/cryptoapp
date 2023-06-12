@@ -10,7 +10,7 @@ const CoinPage = () => {
   const params = useParams()
 
   const url =
-    `https://api.coingecko.com/api/v3/coins/${params.coinId}?localization=false&sparkline=true`;
+    `'https://api.coingecko.com/api/v3/coins/markets?vs_currency=INR&order=market_cap_desc&per_page=20&page=1&sparkline=true&locale=en';    `;
 
   useEffect(() => {
     axios.get(url).then((response) => {
