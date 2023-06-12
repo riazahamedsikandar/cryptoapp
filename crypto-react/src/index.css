@@ -3,15 +3,29 @@
 @tailwind utilities;
 
 :root {
-  @apply bg-primary text-primary
+  --color-bg-primary: #2d3748;
+  --color-bg-secondary: #283141;
+  --color-text-primary: #dbdbdb;
+  --color-text-secondary: #e2e8f0;
+  --color-text-accent: #81e6d9;
+  --color-bg-input: #4a5361;
+  --color-bg-button: #81e6d9;
 }
 
 .rounded-div {
-  @apply border border-secondary rounded-2xl shadow-xl bg-primary px-2 max-w-[1140px] w-full mx-auto
+  --color-bg-primary: #2d3748;
+  border: 1px solid #283141;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #2d3748;
+  padding: 2px;
+  max-width: 1140px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .dark {
-  --color-bg-primary: #2d3748;
   --color-bg-primary: #2d3748;
   --color-bg-secondary: #283141;
   --color-text-primary: #dbdbdb;
